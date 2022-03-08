@@ -1,0 +1,473 @@
+body
+{
+    background-color: #f4f4f4;
+}
+
+header{
+   
+    width: 1512px;
+    height: 80px;
+    margin-left: 50px; /*Cach le trái 50px */
+    color: rgb(233, 14, 14);
+    background-color : white;
+    font-family: 'Times New Roman', Times;
+    font-size: 50px;
+    background-position: center center;
+    padding-top: 10px;
+    text-align: center;
+    position: fixed; /*----- Co dinh menu cha ----- Có hien tuong menu con se bi tran */
+    top: 0;
+   
+   
+    
+   
+}
+
+* {
+    margin:0px;
+    padding:0px;
+}
+.clearfix:after {
+    display:block;
+    clear:both;          
+}
+.wrapper {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(192, 196, 4, 0.2); 
+    
+}
+
+/*----- Phần menu -----*/
+.menu {
+    list-style-type: none;
+    width:1512px;
+    margin:0px ;
+    background:black;
+    height: 50px;
+    margin-top: 80px;
+   
+    margin-left: 50px;
+    position: fixed;
+    text-align: center;
+   
+    
+}
+.menu li {
+    margin-left: 00px;
+    
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+.menu a {
+    transition:all linear 0.15s;
+    color:#f7f2f2; /* chu menu cha mau trang*/
+    text-decoration:none;
+    
+}
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#e70808; /* chu menu con mau trang thanh mau do*/
+}
+.menu .arrow {
+    font-size:14px;
+    line-height:0%;
+} 
+/*----- css cho phần menu cha -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative; /* Định vị trí tuyệt đối (vị trí bao ngoài), lúc này các thẻ HTML bên trong sẽ coi nó là thẻ cha*/
+    font-size:19px;
+}
+
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block; /* hiển thị trên một hàng + hiển thị dang khối   */
+    color:rgb(255, 255, 255);  /* chu tren menu cha   */
+   
+}
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#0fbb48; /* mau menu cha thanh mau luc*/
+    color: rgb(93, 15, 218);  /* chu menu cha mau trang thanh mau duong*/
+    
+	
+}
+
+
+
+/*----css cho menu con----*/
+.menu li:hover .sub-menu {
+    display: block;
+    z-index:0;
+    opacity:1;
+    background:#e40a0a;  /*  menu con mau do*/
+    /*height: auto; /*  chieu cao menu con mau do*/
+   
+    
+}
+
+
+
+
+.sub-menu {
+    width:130%;
+    
+    padding:5px 0px;
+   
+    position:absolute;
+    display: none;
+    top:100%;  /*  menu con an vao menu cha*/
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 0px 1px rgba(0,0,0,0.2);
+    background:#2e2728;
+    
+    
+    
+}
+.sub-menu li {
+    
+    display:block;
+    text-align: left; /* chu menu con can le ben trai*/
+    font-size:16px;
+}
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+    color:hsl(0, 0%, 4%); /* chu menu con mau đen*/
+    
+}
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#eff1ee; /* chuyen mau cua khung con*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.welcome{
+    text-shadow: 2px 2px;
+    color: rgb(61, 28, 180);  
+    font-family: 'UVN Bay Buom Hep Nang', Times, serif, sans-serif;
+    font-size: 30px;
+    text-align: center;
+  
+    
+   
+    /*text-indent: -500px; /*Xác định vị trí hiển thị chữ với text-indent*/
+}
+
+
+.show-right{
+    
+    text-indent: 850px;
+    color : black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+
+.content1{
+    float:right;     /*Nằm bên phai*/
+    margin: 5px; /*khoang cach giua cac khung */
+    width: 1200px;   /*Rộng 700px*/
+    height: 800px;  /*Cao 300px*/
+    background: white;/*Nền màu đỏ*/
+    margin-right : 20px; /*Cach le trái 50px */
+    margin-top: 150px; /*Cach tren  50px */
+    margin-left: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#CCC;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+.sidebar{
+    width: 300px;   /*Rộng 300px*/
+    margin: 0px; /*khoang cach giua cac khung */
+    float: left;   /*Nằm bên trái*/
+    height: 800px;  /*Cao 100px*/
+    background: white;/*Nền màu hồng*/
+    margin-top: 150px; /*Cach tren  50px */
+    margin-left: 50px;
+    margin-right: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#CCC;
+    border-radius: 5px 5px 5px 5px;
+}
+.footer{
+    width: 1512px;
+    height: 200px;      /*Cao 100px*/
+    background: rgb(120, 124, 120);   /*Nền màu xanh*/
+    float: left;
+    margin-left: 50px;
+    text-align: center;
+
+    color: white;  
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-size: 20px;
+    border-width: 1px;
+    border-color:#CCC;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+	
+
+
+ 
+input{
+	visibility: hidden;
+}
+.label-show-modal{ /* nut nhan */
+	background: #09b060;
+	border-radius: 0;
+  	color: #fff;
+  	cursor: pointer;
+  	display: inline-block;
+  	padding: 10px 15px;
+  	font-weight: bold;
+  	margin: 20px;
+        margin-top: 700px;
+        margin-left: 400px;
+        
+}
+.modal-show { /* cua khung modal ngoai */
+  	 background: red;
+  	left: 100px;
+        top:10px;
+  	right:100px;
+  	bottom: 10px;
+  	position: fixed;
+  	text-align: left;
+  	opacity: 0;
+  	transform: scale(0);
+  	visibility: hidden;
+  	transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.modal-show-inner {
+    position: relative;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: #09b060;
+    padding: 0px;
+}
+.modal-show-inner label{
+	position: absolute;
+	width: 30px;  /*  khung chu x */
+	height: 30px; /*  khung chu x */
+	background: #fff;
+	color: #000;
+	text-align: center;
+	border-radius: 100%;
+	line-height: 30px; /* chu x */
+	top: 0px;
+	right: 0px;
+	cursor: pointer;
+}
+input:checked ~ .modal-show {
+  	opacity: 1;
+  	transform: scale(1);
+  	visibility: visible;
+  	transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+
+ 
+
+
+
+	
+
+
+
+
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+
+#main{
+    overflow: hidden
+}
+
+.clear{
+    clear:both
+}
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #e6e6ee;
+	font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma;
+}
+
+ul {
+	list-style-type: none;
+     
+}
+
+a {
+	color: #b63b4d;
+	text-decoration: none;
+}
+
+/** =======================
+ * Contenedor Principal
+ ===========================*/
+h1 {
+ 	color: #FFF;
+ 	font-size: 24px;
+ 	font-weight: 400;
+ 	text-align: center;
+ 	margin-top: 80px;
+ }
+
+h1 a {
+ 	color: #c12c42;
+ 	font-size: 16px;
+ }
+
+ .accordion {
+        float: left;
+        margin-top: 0px;
+        margin-left: 00px;
+ 	width: 100%;
+ 	max-width: 300px;
+ 	
+ 	background: #f3e9e9;
+ 	-webkit-border-radius: 4px;
+ 	-moz-border-radius: 4px;
+ 	border-radius: 4px;
+ }
+
+.accordion .link {
+	cursor: pointer;
+	display: block;
+	padding: 15px 15px 15px 42px;
+	color: #4D4D4D;
+	font-size: 14px;
+	font-weight: 700;
+	border-bottom: 1px solid #CCC;
+	
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li:last-child .link {
+	border-bottom: 0;
+}
+
+.accordion li i {
+	position: absolute;
+        
+	top: 16px;
+	left: 12px;
+	font-size: 18px;
+	color: #595959;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+	right: 12px;
+	left: auto;
+	font-size: 16px;
+         
+       
+        
+}
+
+.accordion li.open .link {
+	
+        color: #b63b4d;
+        background: #3deb08; /* menu chinh từ trắng sang lục*/
+}
+
+.accordion li.open i {
+	color: #b63b4d;
+        
+}
+.accordion li.open i.fa-chevron-down {
+        
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+        
+}
+
+.accordion li.default .submenu {display: block;}
+/**
+ * Submenu
+ -----------------------------*/
+ .submenu {
+ 	display: none;
+       
+ 	background: #4c44dd;
+ 	font-size: 14px;
+ }
+
+ .submenu li {
+ 	border-bottom: 1px solid #4b4a5e;
+ }
+  .submenu li a:active{
+    color:red;
+    background-color:yellow;
+}
+
+ .submenu a {
+ 	display: block;
+ 	text-decoration: none;
+ 	color: #d9d9d9;
+ 	padding: 12px;
+ 	padding-left: 42px;
+ 	-webkit-transition: all 0.25s ease;
+ 	-o-transition: all 0.25s ease;
+ 	transition: all 0.25s ease;
+        
+        
+ }
+ 
+ 
+
+ .submenu a:hover {
+ 	background: #e40728;
+ 	color: black;
+     
+ }
+
+
+ 
